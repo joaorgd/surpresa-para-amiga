@@ -1,0 +1,53 @@
+body {
+    background: linear-gradient(to right, #ffe4e6, #fff);
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  /* Animação suave para entrada das seções */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  /* Estilo especial para a imagem */
+  img.lembranca {
+    border: 4px solid #f9a8d4;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  img.lembranca:hover {
+    transform: scale(1.05);
+  }
+
+  /* Coraçãozinho flutuante decorativo */
+  @keyframes floatHeart {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-60px) scale(1.5);
+      opacity: 0;
+    }
+  }
+
+  .heart-float {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-size: 2rem;
+    animation: floatHeart 2s infinite ease-in-out;
+    color: #f472b6;
+    pointer-events: none;
+  }
